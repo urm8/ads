@@ -9,5 +9,6 @@
 .idea/modules.xml
 .idea/sonarlint/
 .idea/workspace.xml
+.idea/vcs.xml
 algo/search/__pycache__/
 venv/
