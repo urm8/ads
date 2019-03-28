@@ -1,0 +1,13 @@
+*/*.pyc
+*/__pycache__
+*.swp
+*/*.swp
+
+.idea/alg.iml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/sonarlint/
+.idea/workspace.xml
+algo/search/__pycache__/
+venv/
