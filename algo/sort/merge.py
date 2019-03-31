@@ -9,19 +9,23 @@ def sort(lst):
         rpart = lst[middle:]
         sort(lpart)
         sort(rpart)
-        pos = 0
-        while lpart or rpart:
-            if not lpart:
-                lst[pos] = rpart.pop(0)
-            elif not rpart:
-                lst[pos] = lpart.pop(0)
-            elif lpart[0] < rpart[0]:
-                lst[pos] = lpart.pop(0)
-            else:
-                lst[pos] = rpart.pop(0)
-            pos += 1
+        merge(lpart, lst, rpart)
     except IndexError:
         pass
+
+
+def merge(lpart, lst, rpart, pos=None):
+    pos = pos or 0
+    while lpart or rpart:
+        if not lpart:
+            lst[pos] = rpart.pop(0)
+        elif not rpart:
+            lst[pos] = lpart.pop(0)
+        elif lpart[0] < rpart[0]:
+            lst[pos] = lpart.pop(0)
+        else:
+            lst[pos] = rpart.pop(0)
+        pos += 1
 
 
 if __name__ == '__main__':
