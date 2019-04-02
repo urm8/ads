@@ -6,3 +6,4 @@
 .idea
 algo/search/__pycache__/
 venv
+.ropeproject
