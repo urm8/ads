@@ -3,12 +3,6 @@
 *.swp
 */*.swp
 
-.idea/alg.iml
-.idea/encodings.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/sonarlint/
-.idea/workspace.xml
-.idea/vcs.xml
+.idea
 algo/search/__pycache__/
-venv/
+venv
